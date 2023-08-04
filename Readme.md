@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Наталья Зуева](https://up.htmlacademy.ru/htmlcss-individual/1/user/1413529).
-* Наставник: `Неизвестно`.
+* Наставник: [`Артём Картавый`](https://htmlacademy.ru/profile/artem_k).
 
 ---
 
