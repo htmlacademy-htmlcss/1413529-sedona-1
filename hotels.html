@@ -103,13 +103,12 @@
         <fieldset class="catalog-filter-price">
           <legend class="catalog-filter-title">Стоимость, ₽</legend>
           <label class="slider-number">
-            <input class="number-slider-input" type="number" name="min" min="0" placeholder="от">
+            <input class="number-slider-input" type="number" name="min" value="0">
+            <span>от</span>
           </label>
           <label class="slider-number">
-            <input class="number-slider-input" type="number" name="max" max="9000" placeholder="до">
-          </label>
-          <label class="slider-range">
-            <input class="range-slider-input" type="range" name="price" min="0" max="9000">
+            <input class="number-slider-input" type="number" name="max" value="9000">
+            <span>до</span>
           </label>
         </fieldset>
         <button class="button-apply" type="submit">ПРИМЕНИТЬ</button>
@@ -118,20 +117,29 @@
     </section>
     <section>
       <h2 class="visually-hidden">Католог найденных гостиниц по фильтру</h2>
+      <p class="number-hotel-filter">НАЙДЕНО ГОСТИНИЦ:</p>
       <select class="select-control" aria-label="Сортировка">
         <option value="popular">Сначала популярное</option>
-        <option value="cheap">Сначала дешёвое</option>
+        <option value="cheap">Сначала дешевое</option>
         <option value="expensive">Сначала дорогое</option>
       </select>
+      <ul class="view-catalog-list">
+        <li class="view-card-list">
       <a href="#" class="button button-light">
         <span class="visually-hidden">Показать карточки</span>
       </a>
+        </li>
+        <li class="view-card-list">
       <a class="button" href="#">
         <span class="visually-hidden">Показать одну карточку</span>
       </a>
+       </li>
+       <li class="view-card-list">
       <a class="button" href="#">
         <span class="visually-hidden">Показать список</span>
       </a>
+    </li>
+      </ul>
       <ul class="product-list">
         <li class="product-card">
           <a class="hotel-card-link" href="#">
@@ -208,12 +216,10 @@
       </ul>
       <ol class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-prev pagination-disabled">
             <span class="visually-hidden">Предыдущая страница</span>
-          </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
+         1
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
@@ -233,8 +239,10 @@
           <a class="pagination-link" href="#">10</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-next" href="#">
             <span class="visually-hidden">Следущая страница</span>
+            <span class="visually-hidden">Следущая страница</span>
+          </a>
+           <span class="visually-hidden">Следущая страница</span>
           </a>
         </li>
       </ol>
