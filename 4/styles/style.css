@@ -75,7 +75,7 @@ body {
   list-style-type: none;
 }
 
-.navigation-item .visually-hidden {
+.navigation-item {
   text-decoration: none;
   color: #000000;
 }
@@ -251,7 +251,6 @@ input[type="email"] {
 }
 
 .inner-header-title {
-  font-family: "PT Sans", sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
@@ -264,7 +263,6 @@ input[type="email"] {
 }
 
 .breadcrumbs-link {
-  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -274,7 +272,6 @@ input[type="email"] {
 }
 
 .catalog-filter-title {
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -284,7 +281,6 @@ input[type="email"] {
 }
 
 .catalog-filter-item {
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -293,7 +289,6 @@ input[type="email"] {
 }
 
 .catalog-filter-price {
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -303,14 +298,13 @@ input[type="email"] {
 }
 
 .number-slider-input {
-  border-radius: 4px 0 0 4px;
+  border-radius: 4px;
   background-color: #f2f2f2;
   border: none;
   padding: 12px 20px;
 }
 
 .button-apply {
-  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -325,7 +319,6 @@ input[type="email"] {
 }
 
 .button-reset {
-  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
