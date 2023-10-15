@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,11 +30,15 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="visually-hidden" href="#">Поиск.</a>
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Поиск.</span>
+              </a>
             </li>
-            <li class="navigation-item">
-              <a class="visually-hidden" href="#">Избранное.</a>
-              <span class="number-favorite">12</span>
+            <li class="navigation-item navigation-item-favorite">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Избранное.</span>
+                <span class="number-favorite text-favorite">12</span>
+              </a>
             </li>
             <li class="navigation-item navigation-item-button">
               <a class="navigation-link navigation-link-button" href="#">Хочу сюда!</a>
@@ -206,7 +211,6 @@
                 <p class="rating-area">
                   Рейтинг: 6.9
                 </p>
-
               </li>
               <li class="hotel-product-card">
                 <a class="hotel-card-link" href="#">
@@ -214,7 +218,6 @@
                     alt="Вид с отеля GreenTree Inn.">
                   <h3 class="hotel-card-title">GreenTree Inn</h3>
                 </a>
-
                 <span class="hotel-card-description">Гостиница</span>
                 <b class="hotel-card-price">от 1500 ₽</b>
                 <a class="hotel-card-button button-card" href="#">ПОДРОБНЕЕ</a>
@@ -227,7 +230,6 @@
                 <p class="rating-area">
                   Рейтинг: 5.0
                 </p>
-
               </li>
             </ul>
             <ol class="pagination">
@@ -304,4 +306,5 @@
       </footer>
     </div>
   </body>
+
 </html>
