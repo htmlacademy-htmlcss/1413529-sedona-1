@@ -79,6 +79,9 @@ body {
   color: #ffffff;
   opacity: 0.3;
 }
+.button-subscribe:disabled {
+  background-color: #E5E5E5;
+}
 
 .select-control:disabled {
   background-color: #E5E5E5;
@@ -160,18 +163,14 @@ body {
   text-align: center;
 }
 
-
-.navigation-item-button,
 .navigation-link-button:focus {
   background-color: #615048;
 }
 
-.navigation-item-button,
 .navigation-link-button:hover {
   background-color: #615048;
 }
 
-.navigation-item-button,
 .navigation-link-button:active {
   background-color: #756157;
   color: #ffffff;
@@ -978,15 +977,6 @@ input[type="radio"] {
 
 .select-control:active {
   border-color: #3F5E72;
-}
-
-.select-control,
-.popular,
-.cheap,
-.expensive:disabled {
-  color: #000000;
-  border: 2px solid #000000;
-  opacity: 0.3;
 }
 
 .view-catalog-list {
