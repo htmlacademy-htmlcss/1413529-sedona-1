@@ -11,10 +11,12 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="images/index/header-logo.svg" width="140" height="70"
-            alt="Логотип город Седона.">
-        </a>
+        <div class="logo">
+          <a class="navigation-logo" href="index.html">
+            <img class="page-header-logo" src="images/index/header-logo.svg" width="140" height="70"
+              alt="Логотип город Седона.">
+          </a>
+        </div>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item navigation-item-current">
@@ -52,8 +54,7 @@
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
-                  <img src="images/icons/small-home-2.svg" width="12" height="12"
-                    alt="Возврат на главную страницу.">
+                  <img src="images/icons/small-home-2.svg" width="12" height="12" alt="Возврат на главную страницу.">
                 </a>
               </li>
               <li class="breadcrumbs-item">
@@ -64,7 +65,7 @@
           <section class="catalog-hotels-content">
             <h2 class="visually-hidden">Фильтр по гостиницам города Седоны.</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <div class="catalog-filter-group-left">
+              <div class="catalog-filter-left">
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
@@ -112,18 +113,30 @@
                   </ul>
                 </fieldset>
               </div>
-              <div class="catalog-filter-price-right">
-                <fieldset class="catalog-filter-price">
-                  <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                  <label class="slider-number">
-                    <input class="number-slider-input" type="number" name="min" value="0">
-                    <span>от</span>
-                  </label>
-                  <label class="slider-number">
-                    <input class="number-slider-input" type="number" name="max" value="9000">
-                    <span>до</span>
-                  </label>
-                </fieldset>
+              <fieldset class="catalog-filter-price">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <label class="slider-number">
+                  <input class="number-slider-input input-border-left" type="number" name="min" value="0">
+                  <span class="input-text-min">от</span>
+                </label>
+                <label class="slider-number">
+                  <input class="number-slider-input input-border-right" type="number" name="max" value="9000">
+                  <span class="input-text-max">до</span>
+                </label>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 226px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="button-apply-reset">
                 <button class="button-apply" type="submit">ПРИМЕНИТЬ</button>
                 <button class="button-reset" type="reset">СБРОСИТЬ</button>
               </div>
@@ -133,7 +146,7 @@
             <h2 class="visually-hidden">Католог найденных гостиниц по фильтру.</h2>
             <div class="sorting-container">
               <p class="number-hotel-filter">НАЙДЕНО ГОСТИНИЦ: 38</p>
-              <select class="select-control" aria-label="Сортировка" disabled>
+              <select class="select-control" aria-label="Сортировка">
                 <option value="popular">Сначала популярное</option>
                 <option value="cheap">Сначала дешевое</option>
                 <option value="expensive">Сначала дорогое</option>
@@ -181,7 +194,7 @@
                 </li>
               </ul>
             </div>
-            <ul class="hotel-product-list">
+            <ul class="hotel-product-list hotel-product-divider">
               <li class="hotel-product-card">
                 <a class="hotel-card-link" href="#">
                   <img class="hotel-card-image" src="images/hotels/hotel-1.jpg" width="300" height="212"
@@ -191,7 +204,7 @@
                 <span class="hotel-card-description">Гостиница</span>
                 <b class="hotel-card-price">от 4000 ₽</b>
                 <a class="hotel-card-button" href="#">ПОДРОБНЕЕ</a>
-                <button class="button-favorites" type="button" disabled>В ИЗБРАННОЕ</button>
+                <button class="button-favorites" type="button">В ИЗБРАННОЕ</button>
                 <p class="stars-rating-hotels">
                   <span class="visually-hidden">
                     Четырехзвездочный отель.
@@ -214,7 +227,7 @@
                 <span class="hotel-card-description">Гостиница</span>
                 <b class="hotel-card-price">от 5000 ₽</b>
                 <a class="hotel-card-button" href="#">ПОДРОБНЕЕ</a>
-                <button class="button-favorites button-favorites-choice" type="button" disabled>В ИЗБРАННОМ</button>
+                <button class="button-favorites button-favorites-choice" type="button">В ИЗБРАННОМ</button>
                 <p class="stars-rating-hotels">
                   <span class="visually-hidden">
                     Четырехзвездочный отель.
@@ -237,7 +250,7 @@
                 <span class="hotel-card-description">Гостиница</span>
                 <b class="hotel-card-price">от 2500 ₽</b>
                 <a class="hotel-card-button" href="#">ПОДРОБНЕЕ</a>
-                <button class="button-favorites" type="button" disabled>В ИЗБРАННОЕ</button>
+                <button class="button-favorites" type="button">В ИЗБРАННОЕ</button>
                 <p class="stars-rating-hotels">
                   <span class="visually-hidden">
                     Трехзвездочный отель.
@@ -259,7 +272,7 @@
                 <span class="hotel-card-description">Гостиница</span>
                 <b class="hotel-card-price">от 1500 ₽</b>
                 <a class="hotel-card-button" href="#">ПОДРОБНЕЕ</a>
-                <button class="button-favorites" type="button" disabled>В ИЗБРАННОЕ</button>
+                <button class="button-favorites" type="button">В ИЗБРАННОЕ</button>
                 <p class="stars-rating-hotels">
                   <span class="visually-hidden">
                     Двухзвездочный отель.
@@ -272,7 +285,7 @@
                 </p>
               </li>
             </ul>
-            <ol class="pagination pagination-divider ">
+            <ol class="pagination">
               <li class="pagination-item">
                 <a class="pagination-link-start">1</a>
               </li>
@@ -304,8 +317,9 @@
             <p class="subscribe-information-item">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required>
-              <button class="button button-subscribe" type="submit" disabled>Подписаться</button>
+              <input class="input-email" type="email" name="newsletter-email" id="newsletter-email"
+                placeholder="Ваш e-mail" required>
+              <button class="button button-subscribe" type="submit">Подписаться</button>
             </form>
           </div>
         </section>

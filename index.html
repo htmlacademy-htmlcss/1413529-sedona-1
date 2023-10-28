@@ -11,10 +11,12 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="images/index/header-logo.svg" width="140" height="70"
-            alt="Логотип город Седона.">
-        </a>
+        <div class="logo">
+          <a class="navigation-logo" href="index.html">
+            <img class="page-header-logo" src="images/index/header-logo.svg" width="140" height="70"
+              alt="Логотип город Седона.">
+          </a>
+        </div>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item navigation-item-current">
@@ -35,7 +37,7 @@
             </li>
             <li class="navigation-item navigation-item-favorite">
               <a class="navigation-link" href="#">
-                <span class="number-favorite text-favorite">12</span>
+                <span class="text-favorite number-favorite">12</span>
                 <span class="visually-hidden">Избранное.</span>
               </a>
             </li>
@@ -46,13 +48,12 @@
         </nav>
       </header>
       <main class="main-container">
-        <section class="index-hero">
+        <section class="index-hero ">
           <h1 class="visually-hidden">
             Седона-небольшой город в Аризоне на севере США.
           </h1>
           <img class="index-title-font" src="images/index/welcome.svg" width="458" height="352"
             alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
-          <hr class="decor-divider-background">
           <div class="subtitle-container">
             <p class="index-subtitle">
               Седона — небольшой городок в Аризоне,<br>
@@ -134,9 +135,8 @@
             </p>
           </div>
           <ul class="services-list">
-            <li class="services-item-background">
+            <li class="services-item-background services-item-home">
               <div class="services-background-container">
-                <img src="images/icons/home.svg" width="77" height="72" alt="Описание жилья.">
                 <h3 class="services-title">Жильё</h3>
                 <p class="services-description">
                   Рекомендуем пожить в настоящем мотеле,<br>
@@ -144,9 +144,8 @@
                 </p>
               </div>
             </li>
-            <li class="services-item">
+            <li class="services-item services-item-food">
               <div class="services-background-container">
-                <img src="images/icons/food.svg" width="76" height="72" alt="Описание еды.">
                 <h3 class="services-title">Еда</h3>
                 <p class="services-description">
                   Всегда заказывайте топовый фирменный бургер,<br>
@@ -154,9 +153,8 @@
                 </p>
               </div>
             </li>
-            <li class="services-item-background">
-              <div class="services-background-container">
-                <img src="images/icons/gift.svg" width="76" height="76" alt="Сувениры.">
+            <li class="services-item-background services-item-gift">
+              <div class="services-background-container services-background-gift">
                 <h3 class="services-title">Сувениры</h3>
                 <p class="services-description">
                   Не только китайского, но и настоящего местного производства!
@@ -180,8 +178,9 @@
           <p class="subscribe-information">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail" required>
-            <button class="button button-subscribe" type="submit" disabled>Подписаться</button>
+            <input class="input-email" type="email" name="newsletter-email" id="newsletter-email"
+              placeholder="Ваш e-mail" required>
+            <button class="button button-subscribe" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
