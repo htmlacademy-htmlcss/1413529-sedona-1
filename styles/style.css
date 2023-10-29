@@ -789,7 +789,7 @@ img {
   flex-direction: row;
   list-style-type: none;
   margin: 0;
-  padding: 3px;
+  padding: 0;
 }
 
 .breadcrumbs-item {
@@ -826,7 +826,7 @@ img {
 
 .catalog-hotels-content {
   width: 1060px;
-  margin-bottom: 62px;
+  margin-bottom: 73px;
 }
 
 .catalog-filter {
@@ -863,19 +863,89 @@ img {
   gap: 16px;
 }
 
+.control {
+  position: relative;
+  display: block;
+}
+
+.control-mark-tick {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.control-label {
+  padding-left: 36px;
+}
+
+.control:hover .control-mark-tick {
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+.control:focus .control-mark-tick {
+  outline: 3px solid #83b3d3;
+}
+
+.control:active .control-mark-tick {
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+
+.control-mark-ellipse {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.control:hover .control-mark-ellipse {
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+.control:focus .control-mark-ellipse {
+  outline: 3px solid #83b3d3;
+}
+
+.control:active .control-mark-ellipse {
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+
 .control-input {
   margin: 0;
   width: 20px;
   height: 20px;
   border-radius: 4px;
   background-color: #ffffff;
-  margin-right: 16px;
   vertical-align: sub;
   border: none;
   cursor: pointer;
 }
 
+.control-input[type="checkbox"]:checked + .control-mark-tick::before,
+.control-input[type="checkbox"]:checked + .control-mark-tick::after {
+  background-image: url(/images/icons/tick.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 19px;
+  content: "";
+}
 
+.control-input[type="radio"]:checked + .control-mark-ellipse::before,
+.control-input[type="radio"]:checked + .control-mark-ellipse::after {
+  background-image: url(/images/icons/ellipse.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  content: "";
+}
 
 .catalog-filter-title {
   font-size: 20px;
@@ -949,9 +1019,8 @@ img {
   background-color: #f2f2f2;
   padding: 12px 20px;
   width: 143px;
-  appearance: none;
   color: #000000;
-  font-family: "PT Sans", sans-serif;
+  font: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -974,16 +1043,13 @@ img {
   background-color: #f2f2f2;
 }
 
-.range {
-  margin-top: 8px;
-}
 
 .range-scale {
   position: relative;
   height: 4px;
-  margin-bottom: 16px;
   background-color: #ffffff;
 }
+
 
 .range-bar {
   position: absolute;
@@ -1022,6 +1088,12 @@ img {
 .toggle-max {
   top: -8px;
   right: -5px;
+}
+
+.number-slider-input::-webkit-outer-spin-button,
+.number-slider-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .button-apply-reset {
@@ -1120,6 +1192,7 @@ img {
   color: #000000;
   margin: 0;
   padding: 0;
+  padding-right: 130px;
 }
 
 .select-control {
