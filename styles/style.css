@@ -470,32 +470,35 @@ img {
   width: 400px;
   height: 385px;
   text-align: center;
+  padding: 80px 85px;
 }
 
 .services-background-container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 30px;
   align-items: center;
-
+  min-width: 230px;
+  min-height: 223px;
 }
 
 .services-item-home {
   background-image: url(../images/icons/home.svg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 162px 80px;
 }
 
 .services-item-food {
   background-image: url(../images/icons/food.svg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 162px 80px;
 }
 
 .services-item-gift {
   background-image: url(../images/icons/gift.svg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 162px 80px;
 }
 
 .services-item {
