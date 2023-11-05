@@ -34,7 +34,7 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #f2f2f2;
-  width: 1280px;
+  min-width: 1280px;
 }
 
 .page-container {
@@ -155,7 +155,7 @@ body {
 
 .navigation-logo:hover {
   background-color: #ffffff;
-  opacity: 0.2
+  opacity: 0.2;
 }
 
 .logo:focus-within {
@@ -258,7 +258,6 @@ body {
   right: 4px;
   top: 12px;
 }
-
 
 .navigation-item-favorite {
   margin-right: 20px;
@@ -486,6 +485,7 @@ img {
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   background-color: #ffffff;
@@ -729,6 +729,7 @@ img {
 .contacts {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -918,7 +919,7 @@ img {
 }
 
 .search-form-field:focus-within {
-  outline: 2px solid #83B3D3;
+  outline: 2px solid #83b3d3;
 }
 
 .search-form-field:focus-visible:not(:placeholder-shown) {
@@ -1063,7 +1064,7 @@ img {
   min-width: 577px;
   padding: 12px 77px;
   border-radius: 10px;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
 }
 
 .search-form-button:hover {
@@ -1138,7 +1139,7 @@ img {
 }
 
 .tooltip-text::before {
-  content: '';
+  content: "";
   background-image: url("/images/icons/tooltip-triangle.svg");
   width: 19px;
   height: 9px;
@@ -1162,7 +1163,7 @@ img {
   background-image: url("../images/hotels/blur-filter-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  padding-top: 35px;
+  padding-top: 37px;
   color: #ffffff;
   background-color: #ffffff;
 }
@@ -1243,7 +1244,7 @@ img {
 
 .catalog-hotels-content {
   width: 1060px;
-  margin-bottom: 73px;
+  margin-bottom: 70px;
 }
 
 .catalog-filter {
@@ -1300,7 +1301,6 @@ img {
 .control:hover {
   color: #ffffff;
   opacity: 0.6;
-
 }
 
 .control:focus-within .control-mark-tick {
@@ -1620,8 +1620,8 @@ img {
   font-weight: 400;
   line-height: 21px;
   color: #333333;
-  width: 292px;
-  padding: 14px 20px;
+  min-width: 292px;
+  padding: 10px 20px;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
@@ -1679,7 +1679,6 @@ img {
 
 .card-grid-toggle:focus {
   outline: 2px solid #68a2ca;
-
 }
 
 .card-grid-toggle:active {
@@ -1950,7 +1949,7 @@ img {
 .pagination-item-link:focus-within {
   background-color: #68a2ca;
   border-radius: 4px;
-  outline: 1px solid #82B3D3;
+  outline: 1px solid #82b3d3;
 }
 
 .pagination-item-link:active {
