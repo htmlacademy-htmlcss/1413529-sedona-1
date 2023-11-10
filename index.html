@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Город Седона</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" sizes="32x32" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
   </head>
   <body>
@@ -20,7 +20,7 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link">Главная</a>
+              <a class="navigation-link navigation-link-current">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -42,18 +42,20 @@
               </a>
             </li>
             <li class="navigation-item navigation-item-button">
-              <a class="navigation-link navigation-link-button" href="#">Хочу сюда!</a>
+              <a class="navigation-link-button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
       </header>
       <main class="main-container">
         <section class="index-hero">
-          <h1 class="visually-hidden">
-            Седона-небольшой город в Аризоне на севере США.
-          </h1>
-          <img class="index-title-font" src="images/index/welcome.svg" width="458" height="352"
-            alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
+          <div class="index-title-cover">
+            <h1 class="visually-hidden">
+              Седона-небольшой город в Аризоне на севере США.
+            </h1>
+            <img class="index-title-font" src="images/index/welcome.svg" width="458" height="352"
+              alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
+          </div>
           <div class="subtitle-container">
             <p class="index-subtitle">
               Седона — небольшой городок в Аризоне,<br>
@@ -244,7 +246,7 @@
           </a>
         </section>
       </footer>
-      <div class="modal-container modal-container-close"> <!--modal-container-close-->
+      <div class="modal-container"> <!--modal-container-close-->
         <div class="modal modal-search">
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть.</span>
@@ -267,7 +269,7 @@
               </p>
               <p class="field-group field-group-guests">
                 <label class="number-adult" for="number-people">Взрослые:</label>
-                <input class="search-form-guests guests-number-adult" type="number" name="number-people" min="1" max="8"
+                <input class="search-form-guests guests-number-adult" type="text" name="number-people" min="1" max="8"
                   value="2" id="number-people">
                 <span class="minus">
                   <button class="button-minus" type="submit"></button>
@@ -290,7 +292,7 @@
                       будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </span>
-                <input class="search-form-guests" type="number" name="number-children" min="1" max="8" value="2"
+                <input class="search-form-guests" type="text" name="number-children" min="1" max="8" value="2"
                   id="number-children">
                 <span class="minus">
                   <button class="button-minus button-minus-children" type="submit"></button>
