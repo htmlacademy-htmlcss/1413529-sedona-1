@@ -246,7 +246,7 @@
           </a>
         </section>
       </footer>
-      <div class="modal-container"> <!--modal-container-close-->
+      <div class="modal-container modal-container-close">
         <div class="modal modal-search">
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть.</span>
@@ -254,7 +254,7 @@
           </button>
           <section class="modal-content">
             <h2 class="modal-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
-            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="search-form search-form-margin" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group">
                 <label class="search-arrival-date" for="arrival-date">Дата Заезда:</label>
                 <input class="search-form-field search-date" type="text" name="arrival-date" maxlength="30"
@@ -269,13 +269,13 @@
               </p>
               <p class="field-group field-group-guests">
                 <label class="number-adult" for="number-people">Взрослые:</label>
-                <input class="search-form-guests guests-number-adult" type="text" name="number-people" min="1" max="8"
-                  value="2" id="number-people">
+                <input class="search-form-guests guests-number-adult" type="text" name="number-people" value="2"
+                  id="number-people">
                 <span class="minus">
-                  <button class="button-minus" type="submit"></button>
+                  <button class="button-minus" type="button"></button>
                 </span>
                 <span class="plus">
-                  <button class="button-plus" type="submit"></button>
+                  <button class="button-plus" type="button"></button>
                 </span>
                 <span class="form-label">
                   <label class="number-children" for="number-children">Дети:</label>
@@ -292,8 +292,7 @@
                       будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </span>
-                <input class="search-form-guests" type="text" name="number-children" min="1" max="8" value="2"
-                  id="number-children">
+                <input class="search-form-guests" type="text" name="number-children" value="2" id="number-children">
                 <span class="minus">
                   <button class="button-minus button-minus-children" type="submit"></button>
                 </span>

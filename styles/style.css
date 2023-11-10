@@ -22,7 +22,7 @@ html {
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -286,9 +286,6 @@ body {
 
 .index-hero {
   display: block;
-  /* flex-direction: column;
-  align-items: center;
-  position: relative; */
 }
 
 .index-title-cover {
@@ -343,7 +340,6 @@ body {
   margin: 0;
   margin-bottom: 20px;
 }
-
 
 .index-subtitle {
   font-size: 30px;
@@ -432,7 +428,7 @@ body {
   font-weight: 400;
   line-height: 21px;
   margin: 0;
-  max-width: 230px;
+  inline-size: 240px;
 }
 
 .advantages-description::before {
@@ -916,7 +912,8 @@ img {
   text-transform: uppercase;
 }
 
-.search-form, .field-group:not(.field-group-guests) {
+.search-form,
+.field-group:not(.field-group-guests) {
   margin: 0;
   margin-bottom: 27px;
   font-family: "PT Sans", sans-serif;
@@ -929,6 +926,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.search-form-margin {
+  margin-bottom: 0;
 }
 
 .text-search-date {
@@ -974,7 +975,6 @@ img {
   background-color: #f2f2f2;
 }
 
-
 .search-date {
   background-image: url("../images/icons/calendar.svg");
   background-repeat: no-repeat;
@@ -1001,6 +1001,7 @@ img {
 }
 
 .field-group-guests {
+  margin-top: 0;
   margin-bottom: 48px;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -1017,7 +1018,6 @@ img {
 .search-form-guests {
   width: 110px;
   height: 48px;
-  padding: 14px 10px;
   border-radius: 4px;
   background-color: #f2f2f2;
   border: none;
@@ -1039,14 +1039,16 @@ img {
   background-image: url("../images/icons/minus.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
   width: 20px;
   height: 20px;
   border: none;
-  padding: 9px 3px;
   position: absolute;
   content: "";
-  right: 170px;
-  top: -8px;
+  right: 165px;
+  top: -20px;
+  padding: 22px 15px;
+  cursor: pointer;
 }
 
 .button-minus:hover {
@@ -1067,14 +1069,16 @@ img {
   background-image: url("../images/icons/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
   width: 20px;
   height: 20px;
   border: none;
-  padding: 9px 3px;
+  padding: 22px 15px;
   position: absolute;
   content: "";
-  right: 100px;
-  top: -8px;
+  right: 95px;
+  top: -20px;
+  cursor: pointer;
 }
 
 .button-plus:hover {
@@ -1092,13 +1096,14 @@ img {
 }
 
 .button-minus-children {
-  right: 80px;
-  top: -8px;
+  right: 75px;
+  top: -20px;
 }
 
 .button-plus-children {
-  right: 10px;
-  top: -8px;
+  right: 5px;
+  top: -20px;
+  cursor: pointer;
 }
 
 .search-form-guests::-webkit-outer-spin-button,
@@ -1202,8 +1207,6 @@ img {
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
-
-/* Страница каталога-отелей */
 
 .main-inner {
   flex-grow: 1;
