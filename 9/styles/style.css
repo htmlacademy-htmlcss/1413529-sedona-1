@@ -1211,7 +1211,7 @@ img {
   left: 50%;
   z-index: 1;
   transform: translateX(-50%);
-  /* display: none; */
+  display: none;
 }
 
 .tooltip-text::before {
