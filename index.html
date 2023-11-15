@@ -82,32 +82,32 @@
             </li>
             <li class="advantages-item">
               <div class="advantages-item-container">
-                <h3 class="advantages-title">
+                <h3 class="advantages-title divider-line-container">
                   Небольшая площадь
                 </h3>
-                <p class="advantages-description-text divider-line-container">
+                <p class="advantages-description-text">
                   Все достопримечательности находятся очень близко
                 </p>
               </div>
             </li>
             <li class="advantages-item-background">
               <div class="advantages-item-container">
-                <h3 class="advantages-title">
+                <h3 class="advantages-title divider-line-container">
                   Красивая<br>
                   дорога
                 </h3>
-                <p class="advantages-description-text divider-line-container">
+                <p class="advantages-description-text">
                   Ехать в Седону из Лас-Вегаса совсем не скучно!
                 </p>
               </div>
             </li>
             <li class="advantages-item">
               <div class="advantages-item-container">
-                <h3 class="advantages-title">
+                <h3 class="advantages-title divider-line-container">
                   Мало<br>
                   туристов
                 </h3>
-                <p class="advantages-description-text divider-line-container">
+                <p class="advantages-description-text">
                   Большинство едет в Гранд Каньон и толпится там
                 </p>
               </div>
@@ -248,7 +248,7 @@
       </footer>
       <div class="modal-container modal-container-close">
         <div class="modal modal-search">
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть.</span>
             <span class="control-button-close"></span>
           </button>
@@ -258,19 +258,19 @@
               <p class="field-group">
                 <label class="search-arrival-date" for="arrival-date">Дата Заезда:</label>
                 <input class="search-form-field search-date" type="text" name="arrival-date" maxlength="30"
-                  id="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
+                  id="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
                 <span class="text-search-date text-arrival-date">Мы не можем отправить вас в прошлое.</span>
               </p>
               <p class="field-group">
                 <label class="search-departure-date" for="departure-date">Дата Выезда:</label>
                 <input class="search-form-field search-date" type="text" name="departure-date" maxlength="30"
-                  id="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
+                  id="departure-date" value="1 сентября 2023" placeholder="Укажите дату" required>
                 <span class="text-search-date text-departure-date">На эти даты есть свободные номера. Пока есть.</span>
               </p>
               <p class="field-group field-group-guests">
                 <label class="number-adult" for="number-people">Взрослые:</label>
                 <input class="search-form-guests guests-number-adult" type="text" name="number-people" value="2"
-                  id="number-people">
+                  id="number-people" required>
                 <span class="minus">
                   <button class="button-minus" type="button"><span class="visually-hidden">Уменьшение количества
                       людей.</span></button>
@@ -285,7 +285,7 @@
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                       <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Всплывающая подсказка">
-                        <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
                           fill="white"/>
                       </svg>
